@@ -1,0 +1,27 @@
+.search-card {
+    margin: 50px 0;
+    padding: 30px;
+}
+
+.badges {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.badge-date, .badge-source {
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.description {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.news-card {
+    border: none;
+    margin-bottom: 30px;
+}

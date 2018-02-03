@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card search-card">
+    <div class="card-block">
+        <!--<form class="form-inline">
+            <input class="col-sm-2 col-form-label">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>-->
+        <h1 class="text-center">Bitcoin World</h1>
+    </div>
+  </div>    
+  <div class="row">
+    <div *ngFor="let article of news" class="col-4 card news-card">
+      <h2 class="title">{{ article.title }}</h2>
+      <div class="description">{{ article.description }}<span><a href="{{ article.url }}">More details</a></span></div>
+      <p class="d-flex justify-content-between badges"><span class="badge badge-info badge-date">{{ article.publishedAt | date }}</span><span class="badge badge-warning badge-source">{{ article.source.name }}</span></p>
+      <!--<p>Author: {{ article.author }}</p>-->
+      
+      <img class="img-thumbnail" src="{{ article.urlToImage }}">
+    </div>
+  </div>
+</div>
